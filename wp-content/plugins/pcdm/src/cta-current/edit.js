@@ -5,7 +5,7 @@ export default function Edit() {
                 <div className="container">
                     <div
                         className="px-8 py-6 lg:px-24 lg:py-12 bg-secondary-100 rounded-container grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-12"
-                        style={{backgroundImage: `url(${'./../wp-content/themes/pcdm/assets/images/footer-bg.jpg'})`}}>
+                        style={{backgroundImage: `url(${'/../wp-content/themes/pcdm/assets/images/footer-bg.jpg'})`}}>
                         <div>
                             <span
                                 className="text-lg font-bold text-primary-500">Agir pour les Petits Coeurs du Monde</span>

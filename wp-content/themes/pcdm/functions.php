@@ -27,3 +27,16 @@ function pcdm_excerpt_length()
 }
 
 add_filter('excerpt_length', 'pcdm_excerpt_length');
+
+function reusable_blocks_menu()
+{
+    add_menu_page(
+        'Blocs réutilisables',
+        'Blocs réutilisables',
+        'edit_posts',
+        'edit.php?post_type=wp_block',
+        '',
+        'dashicons-editor-table', 10);
+}
+
+add_action('admin_menu', 'reusable_blocks_menu');
