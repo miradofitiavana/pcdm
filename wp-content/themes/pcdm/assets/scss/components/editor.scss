@@ -1,0 +1,32 @@
+.editor-style-wrapper {
+  padding-bottom: 35px;
+  @apply mx-auto px-4 xl:px-20 md:px-6;
+}
+
+/* H1 */
+.edit-post-visual-editor__post-title-wrapper {
+  @apply py-20;
+  h1.editor-post-title {
+    @apply text-black mb-0;
+  }
+}
+
+/* Contenu */
+.wp-block-post-content {
+  @apply flex flex-col gap-y-12 lg:gap-y-24;
+}
+
+/* Galerie */
+.wp-block-gallery {
+  .wp-block-image {
+    @apply h-56 max-h-56;
+
+    > div {
+      @apply h-full;
+    }
+
+    img {
+      object-position: top;
+    }
+  }
+}

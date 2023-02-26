@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "pcdm/listing-maxi",
+  "version": "0.1.0",
+  "title": "Listing MAXI",
+  "category": "pcdm",
+  "icon": "paragraph",
+  "description": "Listing avec Titre en option",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "listing-maxi",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "keywords": [],
+  "attributes": {
+    "nbElements": {
+      "type": "number",
+      "default": 1
+    },
+    "elements": {
+      "type": "array",
+      "default": [
+        {
+          "icone": "",
+          "pretitle": "PreTitle",
+          "title": "Title",
+          "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore explicabo eaque, quia architecto veritatis dolores, enim cons equatur nihil ipsum."
+        }
+      ]
+    }
+  }
+}

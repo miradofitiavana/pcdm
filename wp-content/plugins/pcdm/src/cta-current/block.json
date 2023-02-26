@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "pcdm/cta-current",
+  "version": "0.1.0",
+  "title": "CTA Current Project",
+  "category": "pcdm",
+  "icon": "smiley",
+  "description": "Un bloc de contenu avec pre-title, titre, contenu",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "cta-current",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "keywords": []
+}

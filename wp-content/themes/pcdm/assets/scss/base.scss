@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./../pcdm/assets/fonts/Metropolis/Metropolis-Regular.woff2') format('woff2'),
+  url('./../pcdm/assets/fonts/Metropolis/Metropolis-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./../pcdm/assets/fonts/Metropolis/Metropolis-Light.woff2') format('woff2'),
+  url('./../pcdm/assets/fonts/Metropolis/Metropolis-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./../pcdm/assets/fonts/Metropolis/Metropolis-SemiBold.woff2') format('woff2'),
+  url('./../pcdm/assets/fonts/Metropolis/Metropolis-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./../pcdm/assets/fonts/Metropolis/Metropolis-Bold.woff2') format('woff2'),
+  url('./../pcdm/assets/fonts/Metropolis/Metropolis-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-white;
+  font-family: 'Metropolis', sans-serif;
+}
+
+/*
+ * Styles pour les liens
+ */
+a {
+  text-decoration: none;
+}
+
+h1, .h1 {
+  @apply text-white text-4xl lg:text-6xl font-black mb-8;
+}
+
+h2, .h2 {
+  @apply text-3xl lg:text-5xl text-primary-500 font-bold;
+}
+
+h3, .h3 {
+  @apply text-2xl lg:text-3xl font-semibold tracking-tight text-primary-500;
+}
+
+h4, .h4 {
+  @apply text-lg font-bold lg:text-xl lg:font-medium leading-6 text-gray-900;
+}
+
+.pre-title {
+  @apply text-lg font-bold text-brand-500 block;
+}
+
+.container {
+  @apply mx-auto px-4 xl:px-20 md:px-6;
+}
+
+.btn {
+  @apply tracking-wider font-bold bg-brand-500 text-white hover:text-gray-50 hover:bg-brand-800 shadow-lg;
+  @apply transition-colors duration-300;
+  @apply inline-block px-4 py-2;
+  @apply rounded-button rounded-tl-none rounded-br-none md:rounded-br-button;
+  @apply text-sm lg:text-base leading-none lg:leading-none;
+
+  &--uppercase {
+    @apply uppercase;
+  }
+
+  &--white {
+    @apply bg-white hover:bg-gray-200 text-primary-500 hover:text-primary-700;
+  }
+
+  &--max {
+    @apply inline-flex items-center justify-center;
+    min-width: 200px;
+    min-height: 50px;
+  }
+
+  &--icon {
+    @apply gap-x-2;
+  }
+
+  &--border {
+    @apply border-brand-light-300 shadow-none border-solid border;
+  }
+}
+
+.single-page {
+  a:not(.btn), p, span, li {
+    @apply text-lg text-justify;
+  }
+}
+
+.from-wp {
+  p {
+    @apply text-justify;
+  }
+
+  ul {
+    @apply list-disc list-inside text-justify my-2;
+  }
+}
+
+.wp-block-image {
+  img {
+    @apply rounded-container;
+  }
+}
+
+.components-external-link {
+  display: inline-flex;
+  text-transform: inherit;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border: none;
+
+  .btn-icon, svg {
+    height: 20px;
+  }
+
+  .components-external-link__icon {
+    display: none;
+  }
+}
