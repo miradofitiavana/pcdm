@@ -123,7 +123,7 @@ $the_query = new WP_Query(array(
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-12 pt-16">
                 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                     <div class="shadow-lg rounded-container overflow-hidden">
-                        <img src="<?= get_the_post_thumbnail_url() ?>"
+                        <img src="<?= get_the_post_thumbnail_url() ?>" alt="<?php the_title() ?>"
                              class="w-full h-[230px] object-cover">
                         <div class="px-4 py-6">
                             <p class="text-brand-500"><?= get_the_date()?></p>

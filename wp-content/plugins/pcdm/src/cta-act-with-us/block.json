@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "pcdm/cta-act-with-us",
+  "version": "0.1.0",
+  "title": "CTA Act With Us",
+  "category": "pcdm",
+  "icon": "smiley",
+  "description": "Un bloc de contenu avec pre-title, titre, contenu",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "cta-act-with-us",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "keywords": [],
+  "attributes": {
+    "numberOfItems": {
+      "type": "number",
+      "default": 5
+    },
+    "columns": {
+      "type": "number",
+      "default": 1
+    }
+  }
+}

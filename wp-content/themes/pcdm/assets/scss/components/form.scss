@@ -1,0 +1,33 @@
+.wp-blocks {
+  width: 100% !important;
+}
+
+div.contact-pcdm {
+  @apply w-full max-w-3xl py-0 my-0;
+  .wpforms-form {
+    input, textarea {
+      @apply shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 !important;
+    }
+
+    input {
+      @apply h-12 !important;
+    }
+
+    button {
+
+    }
+
+    .wpforms-title {
+      @apply text-center h2 !important;
+    }
+
+    .wpforms-description {
+      @apply text-center my-4 leading-loose text-lg !important;
+    }
+  }
+
+  .wpforms-confirmation-container-full.wpforms-confirmation-scroll {
+    @apply bg-green-500 text-black rounded-container border-none;
+  }
+}
+

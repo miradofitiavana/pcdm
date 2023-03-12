@@ -15,7 +15,9 @@ unset($file, $filepath);
 // Ajout de la prise en charge des menus
 function pcdm_register_menu()
 {
-    register_nav_menu('primary', __('Header Menu', 'pcdm'));
+    register_nav_menu('primary', 'Header Menu');
+    register_nav_menu('footer', 'Footer Menu');
+    register_nav_menu('sub-footer', 'SubFooter Menu');
 }
 
 add_action('init', 'pcdm_register_menu');

@@ -6,7 +6,7 @@ function pcdm_scripts()
     wp_enqueue_style('pcdm-style', get_stylesheet_uri());
     wp_enqueue_script('font-awesome', 'https://kit.fontawesome.com/d979694951.js');
 
-    wp_enqueue_script('pcdm-script', get_template_directory_uri().'/assets/js/pcdm.js', array(), '1.0.0', true);
+    wp_enqueue_script('pcdm-script', get_template_directory_uri().'/assets/js/pcdm.js', array('jquery'), '1.0.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'pcdm_scripts');

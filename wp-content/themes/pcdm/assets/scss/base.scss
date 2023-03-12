@@ -56,57 +56,59 @@ a {
   text-decoration: none;
 }
 
-h1, .h1 {
-  @apply text-white text-4xl lg:text-6xl font-black mb-8;
-}
+@layer base {
+  h1, .h1 {
+    @apply text-white text-4xl lg:text-6xl font-black mb-8;
+  }
 
-h2, .h2 {
-  @apply text-3xl lg:text-5xl text-primary-500 font-bold;
-}
+  h2, .h2 {
+    @apply text-3xl lg:text-5xl text-primary-500 font-bold;
+  }
 
-h3, .h3 {
-  @apply text-2xl lg:text-3xl font-semibold tracking-tight text-primary-500;
-}
+  h3, .h3 {
+    @apply text-2xl lg:text-3xl font-semibold tracking-tight text-primary-500;
+  }
 
-h4, .h4 {
-  @apply text-lg font-bold lg:text-xl lg:font-medium leading-6 text-gray-900;
-}
+  h4, .h4 {
+    @apply text-lg font-bold lg:text-xl lg:font-medium leading-6 text-gray-900;
+  }
 
-.pre-title {
-  @apply text-lg font-bold text-brand-500 block;
-}
+  .pre-title {
+    @apply text-lg font-bold text-brand-500 block;
+  }
 
-.container {
-  @apply mx-auto px-4 xl:px-20 md:px-6;
+  .container {
+    @apply mx-auto px-4 xl:px-20 md:px-6;
+  }
 }
 
 .btn {
-  @apply tracking-wider font-bold bg-brand-500 text-white hover:text-gray-50 hover:bg-brand-800 shadow-lg;
-  @apply transition-colors duration-300;
-  @apply inline-block px-4 py-2;
-  @apply rounded-button rounded-tl-none rounded-br-none md:rounded-br-button;
-  @apply text-sm lg:text-base leading-none lg:leading-none;
+  @apply tracking-wider font-bold bg-brand-500 text-white hover:text-gray-50 hover:bg-brand-800 shadow-lg !important;
+  @apply transition-colors duration-300 !important;
+  @apply inline-block px-4 py-2 !important;
+  @apply rounded-button rounded-tl-none rounded-br-none md:rounded-br-button !important;
+  @apply text-sm lg:text-base leading-none lg:leading-none !important;
 
   &--uppercase {
-    @apply uppercase;
+    @apply uppercase !important;
   }
 
   &--white {
-    @apply bg-white hover:bg-gray-200 text-primary-500 hover:text-primary-700;
+    @apply bg-white hover:bg-gray-200 text-primary-500 hover:text-primary-700 !important;
   }
 
   &--max {
-    @apply inline-flex items-center justify-center;
-    min-width: 200px;
-    min-height: 50px;
+    @apply inline-flex items-center justify-center !important;
+    min-width: 200px !important;
+    min-height: 50px !important;
   }
 
   &--icon {
-    @apply gap-x-2;
+    @apply gap-x-2 !important;
   }
 
   &--border {
-    @apply border-brand-light-300 shadow-none border-solid border;
+    @apply border-brand-light-300 shadow-none border-solid border !important;
   }
 }
 
@@ -148,5 +150,11 @@ h4, .h4 {
 
   .components-external-link__icon {
     display: none;
+  }
+}
+
+.\!text-center {
+  * {
+    @apply text-center !important;
   }
 }

@@ -1,0 +1,39 @@
+footer {
+  .footer-menu {
+    @apply grid grid-cols-1 gap-8 sm:grid-cols-3 lg:col-span-2 text-center sm:text-left;
+
+    > li {
+      > a {
+        @apply text-lg font-medium text-gray-900 dark:text-white;
+      }
+
+      .sub-menu {
+        @apply mt-8 space-y-4 text-sm;
+
+        a {
+          @apply text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75;
+        }
+      }
+    }
+  }
+
+  .sub-footer-menu {
+    @apply flex flex-col sm:flex-row gap-x-2 gap-y-2;
+
+    li {
+      @apply text-teal-600;
+      &:not(:last-child) {
+        &:after {
+          @screen sm {
+            content: "·";
+            margin-left: 8px;
+          }
+        }
+      }
+
+      a {
+        @apply text-teal-600 transition hover:text-teal-600/75 underline;
+      }
+    }
+  }
+}
